@@ -22,7 +22,7 @@ The installer sets up the backend and adds this widget. The checkout is pinned t
 
 ```bash
 git clone https://github.com/88srzh/token-monitor-omarchy.git ~/.local/share/token-monitor \
-  && git -C ~/.local/share/token-monitor checkout --detach e44d45f52a5047abfb161bae4fe2a50524a697f6 \
+  && git -C ~/.local/share/token-monitor checkout --detach 733f14eaa1268dae06f0782fa687cc42435633e9 \
   && ~/.local/share/token-monitor/scripts/omarchy/install.sh
 ```
 
@@ -32,7 +32,7 @@ The installer writes these, and nothing else:
 
 | What | Where |
 |---|---|
-| Runtime dependencies, if missing | `npm ci --omit=dev` in the checkout |
+| Runtime dependencies, when missing or older than `package-lock.json` | `npm ci --omit=dev` in the checkout |
 | A random hub secret and a loopback host, if not set, in an owner-only file | `.env` in the checkout (`TOKEN_MONITOR_SECRET`, `TOKEN_MONITOR_HOST=127.0.0.1`, mode 600) |
 | The hub's data directory closed to other users | `data/` in the checkout (mode 700) |
 | Hub and agent user services, enabled and started | `~/.config/systemd/user/token-monitor-{hub,agent}.service` |
@@ -46,7 +46,7 @@ Update the widget, then move the backend to the commit named here, which is the 
 ```bash
 omarchy plugin update io.github.88srzh.token-monitor \
   && git -C ~/.local/share/token-monitor fetch origin \
-  && git -C ~/.local/share/token-monitor checkout --detach e44d45f52a5047abfb161bae4fe2a50524a697f6 \
+  && git -C ~/.local/share/token-monitor checkout --detach 733f14eaa1268dae06f0782fa687cc42435633e9 \
   && ~/.local/share/token-monitor/scripts/omarchy/install.sh
 ```
 
