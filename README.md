@@ -2,7 +2,7 @@
 
 An [Omarchy](https://omarchy.org) 4 bar widget for the [Token Monitor](https://github.com/Javis603/token-monitor) hub: token usage, cost and AI tool limits for your AI coding tools, across all your devices. One icon in the bar, which takes Omarchy's alarm colour when a quota passes 90%, and a panel with today / month / all-time totals, limits, tool, model and project breakdowns, a rolling-year activity grid and trend line, recent sessions and devices.
 
-<img width="360" alt="Token Monitor panel in omarchy-shell" src="preview.png" />
+<img width="800" alt="Token Monitor Hub: the panel in omarchy-shell" src="preview.png" />
 
 This is an unofficial widget, built on [Javis603/token-monitor](https://github.com/Javis603/token-monitor). It is published from the [token-monitor-omarchy](https://github.com/88srzh/token-monitor-omarchy) fork; report issues there.
 
@@ -22,7 +22,7 @@ The installer sets up the backend and adds this widget. The checkout is pinned t
 
 ```bash
 git clone https://github.com/88srzh/token-monitor-omarchy.git ~/.local/share/token-monitor \
-  && git -C ~/.local/share/token-monitor checkout --detach 4c1b799c852e378b89c60f17c8c53cf26c447486 \
+  && git -C ~/.local/share/token-monitor checkout --detach 88f2283c7e56988a860b1904a0b9b1cbb5439883 \
   && ~/.local/share/token-monitor/scripts/omarchy/install.sh
 ```
 
@@ -46,7 +46,7 @@ Update the widget, then move the backend to the commit named here, which is the 
 ```bash
 omarchy plugin update io.github.88srzh.token-monitor \
   && git -C ~/.local/share/token-monitor fetch origin \
-  && git -C ~/.local/share/token-monitor checkout --detach 4c1b799c852e378b89c60f17c8c53cf26c447486 \
+  && git -C ~/.local/share/token-monitor checkout --detach 88f2283c7e56988a860b1904a0b9b1cbb5439883 \
   && ~/.local/share/token-monitor/scripts/omarchy/install.sh
 ```
 
