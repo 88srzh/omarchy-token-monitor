@@ -22,7 +22,7 @@ The installer sets up the backend and adds this widget. The checkout is pinned t
 
 ```bash
 git clone https://github.com/88srzh/token-monitor-omarchy.git ~/.local/share/token-monitor \
-  && git -C ~/.local/share/token-monitor checkout --detach 5b7ee9021196bc48e25bf1aadd59a511134724bd \
+  && git -C ~/.local/share/token-monitor checkout --detach 9bb61b75be6eec20ab6709080f03e982346e88b9 \
   && ~/.local/share/token-monitor/scripts/omarchy/install.sh
 ```
 
